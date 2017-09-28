@@ -12,11 +12,11 @@
 			_xml file neural network_
 		* training_xml <br />
 			_saved traing data, while on manuel drive_
-		* collect_training_data.py <br />
+		* **collect_training_data.py** <br />
 			_Code to collect training data while car is under manuel control_
-		* mlp_training.py <br />
+		* **mlp_training.py** <br />
 			_Code for training neural network with collected data_
-		* rc_driver.py <br />
+		* **rc_driver.py** <br />
 			_Python code for full control of the car_
 	* raspberryPi
 		* _Pyhon code which goes on RPi_
