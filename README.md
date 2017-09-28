@@ -2,7 +2,7 @@
 
 ## About
 
-* AutoRCCar
+* _**AutoRCCar**_
 	* arduino
 		* _Code which goes on arduino board_
 	* computer
@@ -20,7 +20,7 @@
 			_Python code for full control of the car_
 	* raspberryPi
 		* _Pyhon code which goes on RPi_
-* html
+* _**html**_
 	* src/main/java/org/robocode/communication/tmp
 		* _Implementation of Java Netty asynchrone TCP server and UDP server for video_
 	* src/main/java/org/robocode/config
