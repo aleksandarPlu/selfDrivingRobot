@@ -11,9 +11,9 @@
 		* mlp_xml <br />
 			_xml file neural network_
 		* training_xml <br />
-			_saved traing data, while on manuel drive_
+			_saved traing data, while on manual drive_
 		* **collect_training_data.py** <br />
-			_Code to collect training data while car is under manuel control_
+			_Code to collect training data while car is under manual control_
 		* **mlp_training.py** <br />
 			_Code for training neural network with collected data_
 		* **rc_driver.py** <br />
