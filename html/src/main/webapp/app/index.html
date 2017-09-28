@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css"/>
+    <link href="index/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body ng-app="chatApp">
+<div ng-controller="ChatCtrl" class="container">
+
+    <table>
+        <tr>
+            <td>
+            <table style="width:200px;float: left">
+                <tr>
+                    <td align="justify">
+                        <form ng-submit="addControlForwardLeft()" name="ControlFormLeft">
+                            <input type="hidden" ng-model="controlForwardLeft"/>
+                            <div class="info">
+                                <button>FL</button>
+                            </div>
+                        </form>
+                    </td>
+                    <td align="justify">
+                        <form ng-submit="addControlForward()" name="ControlForm">
+                            <input type="hidden" ng-model="controlForward"/>
+                            <div class="info">
+                                <button>F</button>
+                            </div>
+                        </form>
+                    </td>
+                    <td align="justify">
+                        <form ng-submit="addControlForwardRight()" name="ControlFormRight">
+                            <input type="hidden" ng-model="controlForwardRight"/>
+                            <div class="info">
+                                <button>FR</button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="justify">
+                        <form ng-submit="addControlLeft()" name="ControlFormLeft">
+                            <input type="hidden" ng-model="controlLeft"/>
+                            <div class="info">
+                                <button>L</button>
+                            </div>
+                        </form>
+                    </td>
+                    <td align="justify">
+                        <form ng-submit="addControlStop()" name="ControlFormStop">
+                            <input type="hidden" ng-model="controlStop"/>
+                            <div class="info">
+                                <button>S</button>
+                            </div>
+                        </form>
+                    </td>
+                    <td align="justify">
+                        <form ng-submit="addControlRight()" name="ControlFormRight">
+                            <input type="hidden" ng-model="controlRight"/>
+                            <div class="info">
+                                <button>R</button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="justify">
+                        <form ng-submit="addControlBackwardLeft()" name="ControlFormBackwardLeft">
+                            <input type="hidden" ng-model="controlBackwardLeft"/>
+                            <div class="info">
+                                <button>BL</button>
+                            </div>
+                        </form>
+                    </td>
+                    <td align="justify">
+                        <form ng-submit="addControlBackward()" name="ControlFormBackward">
+                            <input type="hidden" ng-model="controlBackward"/>
+                            <div class="info">
+                                <button>B</button>
+                            </div>
+                        </form>
+                    </td>
+                    <td align="justify">
+                        <form ng-submit="addControlBackwardRight()" name="ControlFormBackwardRight">
+                            <input type="hidden" ng-model="controlBackwardRight"/>
+                            <div class="info">
+                                <button>BR</button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+
+            </table>
+
+            <img id="target" style="display: inline;float: left" />
+            <div style="float: left">
+                <form ng-submit="addControlManual()" name="ControlFormManual">
+                    <input type="hidden" ng-model="controlManual"/>
+                    <div class="info">
+                        <button id="manualBtn">Manual</button>
+                    </div>
+                </form>
+
+                <form ng-submit="addControlAuto()" name="ControlFormAuto">
+                    <input type="hidden" ng-model="controlAuto"/>
+                    <div class="info">
+                        <button id="autoBtn">Auto</button>
+                    </div>
+                </form>
+
+                <form ng-submit="addControlSemiAuto()" name="ControlFormAuto">
+                    <input type="hidden" ng-model="controlAuto"/>
+                    <div class="info">
+                        <button id="semiBtn">Semi</button>
+                    </div>
+                </form>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div>
+                <div style="float: left;">
+                    <img src="assets/empty.png" id="znak" hight="100" width="100">
+                </div>
+                <div style="float: left; margin-left: 50px;">
+                    <p>
+                        <p style="display: inline">Left:        </p>
+                        <p id="leftSensor" style="display: inline; position: relative;"></p>
+                    </p>
+                    <p>
+                        <p style="display: inline">Front-left:  </p>
+                        <p id="frontLeftSensor" style="display: inline; position: relative;"></p>
+                    </p>
+                    <p>
+                        <p style="display: inline">Front:       </p>
+                        <p id="frontSensor" style="display: inline; position: relative;"></p>
+                    </p>
+                    <p>
+                        <p style="display: inline">Front-right: </p>
+                        <p id="frontRightSensor" style="display: inline; position: relative;"></p>
+                    </p>
+                    <p>
+                        <p style="display: inline">Right:       </p>
+                        <p id="rightSensor" style="display: inline; position: relative;"></p>
+                    </p>
+                </div>
+            </div>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<script>
+    document.getElementById("manualBtn").disabled = true;
+    document.getElementById("autoBtn").disabled = false;
+    document.getElementById("semiBtn").disabled = false;
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/0.3.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.2/stomp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+<script src="index/app.js"></script>
+<script src="index/controllers.js"></script>
+<script src="index/services.js"></script>
+
+</body>
+</html>
