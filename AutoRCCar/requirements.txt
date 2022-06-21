@@ -14,7 +14,7 @@ jupyter-core==4.3.0
 Keras==2.0.8
 Markdown==2.6.9
 matplotlib==2.0.2
-numpy==1.13.1+mkl
+numpy==1.22.0rc1
 olefile==0.44
 opencv-python==3.3.0.9
 pandas==0.20.3
