@@ -36,7 +36,7 @@
         <websocket-api.version>1.0</websocket-api.version>
         <!-- WebSockets End -->
         <!--Netty Start-->
-        <netty.version>4.0.34.Final</netty.version>
+        <netty.version>4.1.42.Final</netty.version>
         <!--Netty End-->
     </properties>
 
