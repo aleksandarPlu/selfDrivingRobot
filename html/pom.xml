@@ -29,7 +29,7 @@
         <servlet.version>3.1.0</servlet.version>
         <!-- Web End -->
         <!-- Jekson Start -->
-        <jackson.version>2.3.3</jackson.version>
+        <jackson.version>2.12.7.1</jackson.version>
         <jackson-jaxrs-json-provider.version>2.3.3</jackson-jaxrs-json-provider.version>
         <!-- Jekson End -->
         <!-- WebSockets Start -->
